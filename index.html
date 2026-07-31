@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Escolar - Sistema Interno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Cabeçalho -->
+    <header class="top-header">
+        <div class="logo-area">
+            <img src="imagens/logo.png" alt="Logotipo Escola" class="logo-img">
+            <div>
+                <h1>Colégio Avançar</h1>
+                <span class="system-name">EduManager Pro</span>
+            </div>
+        </div>
+        <div class="date-area">
+            <p id="current-date">30 de Julho de 2026</p>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <!-- 2. Menu Lateral -->
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#" class="active">🏠 Início</a></li>
+                <li><a href="#">👨‍🎓 Alunos</a></li>
+                <li><a href="#">👩‍🏫 Professores</a></li>
+                <li><a href="#">🏫 Turmas</a></li>
+                <li><a href="#">📅 Horários</a></li>
+                <li><a href="#">📚 Biblioteca</a></li>
+                <li><a href="#">💰 Financeiro</a></li>
+            </ul>
+        </nav>
+
+        <!-- Área Principal -->
+        <main class="main-content">
+            
+            <!-- 3. Cards Informativos -->
+            <section class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">👨‍🎓</div>
+                    <div class="card-info">
+                        <h3>Alunos</h3>
+                        <p>850</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">👩‍🏫</div>
+                    <div class="card-info">
+                        <h3>Professores</h3>
+                        <p>48</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📚</div>
+                    <div class="card-info">
+                        <h3>Turmas</h3>
+                        <p>32</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📖</div>
+                    <div class="card-info">
+                        <h3>Livros</h3>
+                        <p>5.420</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🏆</div>
+                    <div class="card-info">
+                        <h3>Eventos</h3>
+                        <p>15</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💻</div>
+                    <div class="card-info">
+                        <h3>Laboratórios</h3>
+                        <p>6</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção de Dados Mistos (Grid de 2 Colunas) -->
+            <div class="content-row">
+                
+                <!-- 4. Tabela de Alunos -->
+                <section class="table-section">
+                    <h2>Lista de Alunos Recentes</h2>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Matrícula</th>
+                                    <th>Nome</th>
+                                    <th>Turma</th>
+                                    <th>Situação</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>#202601</td><td>Ana Silva</td><td>1º Ano A</td><td><span class="status active">Ativo</span></td></tr>
+                                <tr><td>#202602</td><td>Bruno Costa</td><td>1º Ano B</td><td><span class="status active">Ativo</span></td></tr>
+                                <tr><td>#202603</td><td>Carlos Souza</td><td>2º Ano A</td><td><span class="status pending">Pendente</span></td></tr>
+                                <tr><td>#202604</td><td>Diana Martins</td><td>2º Ano B</td><td><span class="status active">Ativo</span></td></tr>
+                                <tr><td>#202605</td><td>Eduardo Lima</td><td>3º Ano A</td><td><span class="status active">Ativo</span></td></tr>
+                                <tr><td>#202606</td><td>Fernanda Rocha</td><td>3º Ano B</td><td><span class="status inactive">Inativo</span></td></tr>
+                                <tr><td>#202607</td><td>Gabriel Jesus</td><td>1º Ano A</td><td><span class="status active">Ativo</span></td></tr>
+                                <tr><td>#202608</td><td>Helena Oliveira</td><td>2º Ano A</td><td><span class="status active">Ativo</span></td></tr>
+                                <tr><td>#202609</td><td>Igor Guimarães</td><td>3º Ano A</td><td><span class="status pending">Pendente</span></td></tr>
+                                <tr><td>#202610</td><td>Julia Mendes</td><td>2º Ano B</td><td><span class="status active">Ativo</span></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Coluna Lateral Direita (Avisos e Calendário) -->
+                <div class="widgets-section">
+                    
+                    <!-- 5. Avisos -->
+                    <section class="widget-card alerts-widget">
+                        <h2>⚠️ Avisos da Escola</h2>
+                        <ul class="alert-list">
+                            <li>
+                                <strong>Início das Provas:</strong> Fiquem atentos ao cronograma oficial disponível no portal na próxima segunda-feira.
+                            </li>
+                            <li>
+                                <strong>Festa Junina Escolar:</strong> Arrecadação de alimentos para a nossa gincana solidária começa amanhã!
+                            </li>
+                            <li>
+                                <strong>Reunião de Pais:</strong> Sábado letivo com atendimento individualizado para entrega de boletins.
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!-- 6. Calendário de Eventos -->
+                    <section class="widget-card events-widget">
+                        <h2>📅 Calendário de Eventos</h2>
+                        <ul class="event-list">
+                            <li><span class="event-date">05/08</span> <span class="event-name">Feira de Ciências</span></li>
+                            <li><span class="event-date">12/08</span> <span class="event-name">Campeonato Escolar</span></li>
+                            <li><span class="event-date">18/08</span> <span class="event-name">Simulado Geral</span></li>
+                            <li><span class="event-date">25/08</span> <span class="event-name">Conselho de Classe</span></li>
+                            <li><span class="event-date">30/08</span> <span class="event-name">Encerramento do Bimestre</span></li>
+                        </ul>
+                    </section>
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- 7. Rodapé -->
+    <footer class="main-footer">
+        <p>Desenvolvido por: <strong>Seu Nome Completo</strong> | Turma: <strong>Análise de Sistemas - 2A</strong> | Disciplina: <strong>Desenvolvimento Web Front-End</strong> | Ano: 2026</p>
+    </footer>
+
+</body>
+</html>
